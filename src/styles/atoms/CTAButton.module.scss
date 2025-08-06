@@ -1,0 +1,38 @@
+
+.ctaButton {
+    display: flex;
+    width: 180px;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.ctaButton--normal {
+  background-color: #ffd200;
+  color: #0A1928;
+  border: none;
+
+  &:hover {
+    background-color: #978111;
+  }
+}
+
+.ctaButton--dark {
+    background-color: #0A1928;
+    color: #FFF;
+    border: 2px solid #ffd200;
+
+    &:hover {
+        background-color: #ffd200;
+        color: #0A1928;
+      }
+
+}
+
+
