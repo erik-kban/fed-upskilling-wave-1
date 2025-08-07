@@ -13,7 +13,7 @@ const CarouselButton: React.FC<CarouselButtonProps> = ({ direction, onClick, cla
 
   return (
     <button 
-      className={`${styles.carousel__button} ${className || ''}}`}
+      className={`${styles.carousel__button} ${className || ''}`}
       onClick={onClick}
       aria-label={ariaLabel}
       type="button"
