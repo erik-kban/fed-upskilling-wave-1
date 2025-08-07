@@ -1,7 +1,6 @@
 
 .ctaButton {
     display: flex;
-    width: 180px;
     height: 44px;
     font-size: 16px;
     border-radius: 30px;
@@ -32,7 +31,16 @@
         background-color: #ffd200;
         color: #0A1928;
       }
-
 }
 
+.ctaButton--size--small {
+    width: 154px;
+}
 
+.ctaButton--size--medium {
+    width: 180px;
+}
+
+.ctaButton--size--large {
+    width: 418px;
+}
