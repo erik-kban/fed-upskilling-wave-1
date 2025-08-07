@@ -10,7 +10,7 @@ interface CTAButtonProps {
 
 const CTAButton: React.FC<CTAButtonProps> = ({ icon, text, isDarkButton, size }) => {
   return (
-    <button className={`${styles.ctaButton} ${styles[`ctaButton--size--${size}`]} ${isDarkButton ? styles["ctaButton--dark"] :styles["ctaButton--normal"]}`}>
+    <button aria-label="CTA Button" className={`${styles.ctaButton} ${styles[`ctaButton--size--${size}`]} ${isDarkButton ? styles["ctaButton--dark"] :styles["ctaButton--normal"]}`}>
       {icon}
       {text}
     </button>
