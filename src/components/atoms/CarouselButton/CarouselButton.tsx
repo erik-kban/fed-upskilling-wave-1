@@ -8,12 +8,12 @@ interface CarouselButtonProps {
     className?: string;
 }
 
-const CarouselButton: React.FC<CarouselButtonProps> = ({ direction, onClick }) => {
+const CarouselButton: React.FC<CarouselButtonProps> = ({ direction, onClick, className }) => {
   const ariaLabel = direction === 'left' ? 'Previous slide' : 'Next slide';
 
   return (
     <button 
-      className={`${styles.carousel__button}`}
+      className={`${styles.carousel__button} ${className || ''}}`}
       onClick={onClick}
       aria-label={ariaLabel}
       type="button"
