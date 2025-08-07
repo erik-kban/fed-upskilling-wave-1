@@ -1,6 +1,6 @@
 // import Image from "next/image";
 // import styles from "./page.module.css";
-import Carousel from "@/components/molecules/molecules/Carousel/Carousel";
+import Carousel from "@/components/molecules/Carousel/Carousel";
 
 export default function Home() {
   return (

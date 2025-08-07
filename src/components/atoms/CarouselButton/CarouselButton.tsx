@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '../../../../src/styles/CarouselButton.module.css'
+import styles from '../../../../src/styles/CarouselButton.module.scss'
 
 interface CarouselButtonProps {
     direction: 'left' | 'right';
@@ -8,18 +8,22 @@ interface CarouselButtonProps {
     className?: string;
 }
 
-const CarouselButton: React.FC<CarouselButtonProps> = ({ direction, onClick, className }) => {
+const CarouselButton: React.FC<CarouselButtonProps> = ({ direction, onClick }) => {
+  const ariaLabel = direction === 'left' ? 'Previous slide' : 'Next slide';
+
   return (
     <button 
-      className={`${styles.button} ${styles[direction]} ${className || ''}`}
+      className={`${styles.carousel__button}`}
       onClick={onClick}
-      aria-label={`${direction} slide`}
+      aria-label={ariaLabel}
+      type="button"
+      tabIndex={0}
     >
       <Image 
         src={`/carouselAssets/${direction}-arrow.svg`}
-        alt={`${direction} arrow`}
-        width={24}
-        height={24}
+        alt="Image of arrow"  
+        width={48}
+        height={48}
       />
     </button>
   )
