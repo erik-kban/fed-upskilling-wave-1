@@ -1,20 +1,27 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem 10rem;
     background-color: #0A1928;
-}
+    padding: 16px 34px 16px 25px;
+    height: 80px;
 
-.header__logoContainer {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
 
-}
+    .header__logoContainer {
+        display: flex;
+        align-items: center;
+    }
 
-.header__searchContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .header__ctaButtons {
+        display: flex;
+        gap: 24px;
+        margin: 0 24px 0 24px;
+    }
+
+    .header__menuIcon {
+        margin: 0 24px 0 24px;
+    }
+
+    .header__searchContainer {
+        width: 654px;
+    }
 }

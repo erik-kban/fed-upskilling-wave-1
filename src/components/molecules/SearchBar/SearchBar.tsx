@@ -21,6 +21,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
                     className={styles.searchBar__input}
                     aria-label="Search input"
                     id="search-input"
+                    placeholder="What are you looking for?"
                 />
                 <button type="submit" className={styles.searchBar__button}>
                     <Icon logo={searchIcon} width={46} height={46}/>

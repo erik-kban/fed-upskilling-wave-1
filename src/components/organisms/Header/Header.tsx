@@ -7,6 +7,9 @@ import Icon from '@/components/atoms/Icon/Icon'
 import styles from '@styles/Header.module.scss'
 import SearchBar from '@/components/molecules/SearchBar/SearchBar'
 import shoppingCartIcon from '@assets/HeaderAssets/cartLogo.svg'
+import CTAButton from '@/components/atoms/CTAButton'
+import PersonIcon from '@/assets/icons/PersonIcon'
+import ToolIcon from '@/assets/icons/ToolIcon'
 
 // Dummy prop
 interface HeaderProps {
@@ -24,17 +27,30 @@ const Header: React.FC<HeaderProps> = () => {
                         height={48}
                     />
                 </div>
-                <div aria-label="Menu Icon">
+                <div aria-label="Menu Icon" className={styles.header__menuIcon}>
                     <Icon
                         logo={menuIcon}
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={60}
                     />
                 </div>
             </div>
-            <div className={styles.header__searchContainer}>
-                <div>
+                <div className={styles.header__searchContainer}>
                     <SearchBar
+                    />
+                </div>
+                <div className={styles.header__ctaButtons}>
+                    <CTAButton
+                        icon={<PersonIcon />}
+                        text="Menu"
+                        isDarkButton={false}
+                        size="medium"
+                    />
+                    <CTAButton
+                        icon={<ToolIcon />}
+                        text="Login"
+                        isDarkButton={true}
+                        size="medium"
                     />
                 </div>
                 <div aria-label="shopping cart icon">
@@ -44,8 +60,6 @@ const Header: React.FC<HeaderProps> = () => {
                         height={50}
                     />
                 </div>
-            </div>
-
         </header>
     )
 }

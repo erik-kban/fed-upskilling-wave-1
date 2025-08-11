@@ -1,14 +1,14 @@
 .searchBar {
     position: relative;
     width: 100%;
-    max-width: 500px;
-
+    
     .searchBar__button {
+        display: flex;
+        align-items: center;
         background-color: transparent;
         border: none;
-        width: fit-content;
-        padding: 5px;
         cursor: pointer;
+        border-radius: 4px;
     }
 
     .searchBar__container {
@@ -16,8 +16,8 @@
         align-items: center;
         background-color: #f8fafc;
         border: 1px solid #e2e8f0;
-        border-radius: 6px;
-        width: 300px;
+        border-radius: 4px;
+        height: 50px;
     }
 
     &__input {
@@ -35,7 +35,7 @@
         }
 
         &::placeholder {
-            color: #94a3b8;
+            color: black;
         }
     }
 }
