@@ -5,12 +5,6 @@
     padding: 16px 34px 16px 25px;
     height: 80px;
 
-
-    .header__logoContainer {
-        display: flex;
-        align-items: center;
-    }
-
     .header__ctaButtons {
         display: flex;
         gap: 24px;
@@ -19,9 +13,5 @@
 
     .header__menuIcon {
         margin: 0 24px 0 24px;
-    }
-
-    .header__searchContainer {
-        width: 654px;
     }
 }

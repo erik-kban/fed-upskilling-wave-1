@@ -19,47 +19,39 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = () => {
     return (
         <header className={styles.header} role="banner">
-            <div className={styles.header__logoContainer}>
-                <div aria-label="trade logo">
-                    <Icon
-                        logo={logoImage}
-                        width={164}
-                        height={48}
-                    />
-                </div>
-                <div aria-label="Menu Icon" className={styles.header__menuIcon}>
-                    <Icon
-                        logo={menuIcon}
-                        width={40}
-                        height={60}
-                    />
-                </div>
+            <Icon
+                logo={logoImage}
+                width={164}
+                height={48}
+            />
+            <div aria-label="Menu Icon" className={styles.header__menuIcon}>
+                <Icon
+                    logo={menuIcon}
+                    width={40}
+                    height={60}
+                />
             </div>
-                <div className={styles.header__searchContainer}>
-                    <SearchBar
-                    />
-                </div>
-                <div className={styles.header__ctaButtons}>
-                    <CTAButton
-                        icon={<PersonIcon />}
-                        text="Menu"
-                        isDarkButton={false}
-                        size="medium"
-                    />
-                    <CTAButton
-                        icon={<ToolIcon />}
-                        text="Login"
-                        isDarkButton={true}
-                        size="medium"
-                    />
-                </div>
-                <div aria-label="shopping cart icon">
-                    <Icon
-                        logo={shoppingCartIcon}
-                        width={50}
-                        height={50}
-                    />
-                </div>
+            <SearchBar
+            />
+            <div className={styles.header__ctaButtons}>
+                <CTAButton
+                    icon={<PersonIcon />}
+                    text="Menu"
+                    isDarkButton={false}
+                    size="medium"
+                />
+                <CTAButton
+                    icon={<ToolIcon />}
+                    text="Login"
+                    isDarkButton={true}
+                    size="medium"
+                />
+            </div>
+            <Icon
+                logo={shoppingCartIcon}
+                width={50}
+                height={50}
+            />
         </header>
     )
 }
