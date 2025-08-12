@@ -24,7 +24,7 @@ const Register = () => {
         Generate bulk orders or re-order past orders with a just few clicks
       </div>
       <div>
-        <CTAButton text="Reguster" size="small" />
+        <CTAButton text="Register" size="small" />
         Find out more
       </div>
     </div>

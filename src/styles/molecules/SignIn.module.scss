@@ -1,0 +1,51 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: rgba(59, 71, 83, 1);
+  padding: 76px 48px;
+
+  & h1 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  & p {
+    font-size: 16px;
+    text-decoration-line: underline;
+    font-weight: 800;
+  }
+
+  &__textinput {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+
+    & input {
+      height: 44px;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 1);
+      color: black;
+
+    }
+  }
+
+  &__checkboxinput {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    & input {
+      border-radius: 4px;
+      accent-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+  }
+}
