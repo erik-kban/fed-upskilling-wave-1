@@ -8,30 +8,32 @@
     color: #0a1928;
 }
 
-.disclaimers__container {
-    display: flex;
-    flex-direction: column;
-}
+.disclaimers {
+    &__container {
+        display: flex;
+        flex-direction: column;
 
-.disclaimers__container--one {
-    flex: 1;
-}
+        &--one {
+            flex: 1;
+        }
 
-.disclaimers__container--two {
-    flex: 0.5;
-    margin-right: 80px;
-    text-align: right;
-}
+        &--two {
+            flex: 0.5;
+            margin-right: 80px;
+            text-align: right;
+        }
+    }
 
-.disclaimers__list {
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
-    margin: 0 0 12px;
-    padding: 0;
-    list-style: none;
-}
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        margin: 0 0 12px;
+        padding: 0;
+        list-style: none;
+    }
 
-.disclaimers__copyright {
-    text-align: right;
+    &__copyright {
+        text-align: right;
+    }
 }
