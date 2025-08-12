@@ -1,0 +1,28 @@
+.footerLinks__container {
+    display: flex;
+    gap: 16px;
+    padding: 40px 88px 40px 88px;
+    background-color: #0A1928;
+
+    & li {
+        list-style-type: none;
+        margin: 24px 0 24px 0;
+        width: 240px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    & ul {
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+.footerLinks__buttonContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
