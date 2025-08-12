@@ -1,0 +1,21 @@
+.disclaimers {
+    display: flex;
+    font-size: 12px;
+}
+
+.disclaimers__container {
+    display: flex;
+    padding: 40px 0px 40px 80px;
+
+    &--one {
+        line-height: 1.7rem;
+        flex: 3;
+    }
+
+    &--two {
+
+    }
+}
+
+
+
