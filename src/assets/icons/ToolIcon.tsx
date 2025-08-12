@@ -1,7 +1,6 @@
 import React from "react";
 
 export interface PersonIconProps extends React.SVGProps<SVGSVGElement> {
-    color?: string;
     className?: string;
 }
 

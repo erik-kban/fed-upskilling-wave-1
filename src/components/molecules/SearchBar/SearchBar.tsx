@@ -4,17 +4,11 @@ import styles from '@styles/SearchBar.module.scss';
 import Icon from '@/components/atoms/Icon/Icon';
 import searchIcon from '@assets/HeaderAssets/searchIcon.svg';
 
-interface SearchBarProps {
-    placeholder?: string;
-    className?: string;
-}
 
-const SearchBar: React.FC<SearchBarProps> = ({
 
-    className
-}) => {
+const SearchBar: React.FC = () => {
     return (
-        <div className={`${styles.searchBar} ${className || ''}`}>
+        <div className={`${styles.searchBar}`}>
             <div className={styles.searchBar__container}>
                 <input
                     type="search"

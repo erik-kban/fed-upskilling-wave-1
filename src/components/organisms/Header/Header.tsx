@@ -11,12 +11,9 @@ import CTAButton from '@/components/atoms/CTAButton'
 import PersonIcon from '@/assets/icons/PersonIcon'
 import ToolIcon from '@/assets/icons/ToolIcon'
 
-// Dummy prop
-interface HeaderProps {
-    text?: string;
-}
 
-const Header: React.FC<HeaderProps> = () => {
+
+const Header: React.FC = () => {
     return (
         <header className={styles.header} role="banner">
             <Icon

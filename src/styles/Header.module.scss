@@ -5,13 +5,13 @@
     padding: 16px 34px 16px 25px;
     height: 80px;
 
-    .header__ctaButtons {
+    &__ctaButtons {
         display: flex;
         gap: 24px;
         margin: 0 24px 0 24px;
     }
 
-    .header__menuIcon {
+    &__menuIcon {
         margin: 0 24px 0 24px;
     }
 }
