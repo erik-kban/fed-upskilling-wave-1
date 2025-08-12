@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #0A1928;
+    padding: 16px 34px 16px 25px;
+    height: 80px;
+
+    &__ctaButtons {
+        display: flex;
+        gap: 24px;
+        margin: 0 24px 0 24px;
+    }
+
+    &__menuIcon {
+        margin: 0 24px 0 24px;
+    }
+}
