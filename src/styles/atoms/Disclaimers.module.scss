@@ -1,21 +1,37 @@
 .disclaimers {
     display: flex;
+    gap: 200px;
+    padding: 40px 0 40px 80px;
     font-size: 12px;
+    line-height: 1.5rem;
+    background-color: #b6babe;
+    color: #0a1928;
 }
 
 .disclaimers__container {
     display: flex;
-    padding: 40px 0px 40px 80px;
-
-    &--one {
-        line-height: 1.7rem;
-        flex: 3;
-    }
-
-    &--two {
-
-    }
+    flex-direction: column;
 }
 
+.disclaimers__container--one {
+    flex: 1;
+}
 
+.disclaimers__container--two {
+    flex: 0.5;
+    margin-right: 80px;
+    text-align: right;
+}
 
+.disclaimers__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+}
+
+.disclaimers__copyright {
+    text-align: right;
+}
