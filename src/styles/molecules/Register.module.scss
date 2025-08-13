@@ -1,0 +1,43 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(231, 232, 234, 1);
+  color: rgba(10, 25, 40, 1);
+  padding: 87px 48px 116px;
+  gap: 50px;
+
+  &__heading {
+    gap: 8px;
+
+    & h1 {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    & p {
+      font-size: 16px;
+    }
+  }
+
+  &__icontext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    & p {
+      width: 362px;
+    }
+  }
+
+  &__ctaText {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
+    & p {
+      text-decoration-line: underline;
+    }
+  }
+}
