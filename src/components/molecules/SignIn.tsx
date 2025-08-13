@@ -3,7 +3,8 @@ import SCALogo from "@/assets/icons/SCALogo";
 import CTAButton from "../atoms/CTAButton";
 import styles from "../../styles/molecules/SignIn.module.scss";
 
-import HideIcon from "@/assets/icons/HideIcon";
+import Icon from "../atoms/Icon/Icon";
+import HideIcon from "@assets/SignInRegsiterAssets/HideIcon.svg";
 
 const SignIn = () => {
   return (
@@ -21,8 +22,12 @@ const SignIn = () => {
       </div>
       <div className={`${styles["signin__textinput"]}`}>
         <label htmlFor="password">Password</label>
-        <input id="password" type="text" placeholder="Enter password" ></input>
-
+        <div className={`${styles["signin__textinput__container"]}`}>
+          <input id="password" type="text" placeholder="Enter password"></input>
+          <button>
+            <Icon logo={HideIcon} width={24} height={24} />
+          </button>
+        </div>
       </div>
       <p>Forgot password?</p>
       <div className={`${styles["signin__checkboxinput"]}`}>
