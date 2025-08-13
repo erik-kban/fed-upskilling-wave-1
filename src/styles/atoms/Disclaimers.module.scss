@@ -1,0 +1,38 @@
+.disclaimers {
+    display: flex;
+    gap: 200px;
+    padding: 40px 0 40px 80px;
+    font-size: 12px;
+    line-height: 1.5rem;
+    background-color: #b6babe;
+    color: #0a1928;
+    width: 100%;
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        &--one {
+            flex: 1;
+        }
+
+        &--two {
+            flex: 0.5;
+            margin-right: 80px;
+            text-align: right;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        margin: 0 0 12px;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__copyright {
+        text-align: right;
+    }
+}

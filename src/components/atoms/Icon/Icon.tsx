@@ -7,9 +7,10 @@ interface IconProps {
     height?: number;
     alt?: string;
     className?: string;
+    onClick?: () => void;
 }
 
-const Icon: React.FC<IconProps> = ({ logo, width, height, alt, className }) => {
+const Icon: React.FC<IconProps> = ({ logo, width, height, alt, className, onClick }) => {
     const appLogo = logo || '/placeholder-icon.svg'; 
   return (
     <Image
@@ -18,6 +19,7 @@ const Icon: React.FC<IconProps> = ({ logo, width, height, alt, className }) => {
         width={width || 100}
         height={height || 50}
         className={className}
+        onClick={onClick}
     />
   )
 }
