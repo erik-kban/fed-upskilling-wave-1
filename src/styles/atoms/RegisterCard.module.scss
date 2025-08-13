@@ -1,0 +1,22 @@
+.registerCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: #E7E8EA;
+    color: #3B4753;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+
+}
