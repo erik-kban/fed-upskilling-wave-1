@@ -1,0 +1,14 @@
+.sponsors__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px;
+    background-color: #3B4753;
+    gap: 24px;
+    font-weight: bold;
+    font-size: 18px;
+
+    &--margin {
+        margin-bottom: 16px;
+    }
+}
