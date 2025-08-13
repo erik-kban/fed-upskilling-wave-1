@@ -4,19 +4,23 @@
     padding: 32px;
     background-color: #E7E8EA;
     color: #3B4753;
+    
 
     &__container {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-
+        
+       & h3 {
+        margin: 0;
+       }
     }
 
     &__actions {
+         gap: 43px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 24px;
+        
     }
 
 }

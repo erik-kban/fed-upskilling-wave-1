@@ -1,12 +1,13 @@
 import React from 'react'
 import Icon from '@components/atoms/Icon/Icon'
 import styles from "@styles/atoms/JoinCard.module.scss"
+import CustomLink from '../CustomLink/CustomLink'
 
 interface JoinCardProps {
     title: string;
     subTitle: string;
-    paragraph: string;
-    link?: React.ReactNode;
+    paragraph?: string;
+    link?: string;
 }
 
 
@@ -17,7 +18,7 @@ const JoinCard:React.FC<JoinCardProps> = ({title, subTitle, paragraph, link}) =>
         <h2>{title}</h2>
         <p>{subTitle}</p>
         <p>{paragraph}</p>
-        {link ? link : null}
+        {link ? <CustomLink text={link}/> : null}
     </div>
   )
 }
