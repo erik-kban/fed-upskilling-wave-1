@@ -38,8 +38,7 @@ const JoinSca = () => {
     ]
     return (
         <>
-            <div className={styles.joinsca}>
-
+            <section aria-label="Join SCA" className={styles.joinsca}>
                 <h1>LET US HELP YOU</h1>
                 <div className={styles.joinsca__cards}>
                     {cards.map((card, cardIndex) => (
@@ -50,11 +49,8 @@ const JoinSca = () => {
                 <div className={styles.joinsca__registerContainer}>
                     <RegisterCard />
                 </div>
-
-            </div>
-
+            </section>
         </>
-
     )
 }
 
