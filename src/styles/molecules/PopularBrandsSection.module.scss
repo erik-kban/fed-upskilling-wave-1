@@ -1,21 +1,29 @@
 .popularbrandsection {
-    display:flex;
-    gap: 17px;
     padding: 96px 200px 100px 200px;
     background-color: #788189;
-    flex-wrap: wrap;
+   
+    &__sectionHeader {
+        color: #FFFFFF;
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 54px;
+    }
 
-  
+    &__cards {
+        display:flex;
+        gap: 17px;
+        flex-wrap: wrap;
+    }
 }
 
   @media screen and (min-width: 1440px) {
-        .popularbrandsection {
+        .popularbrandsection__cards {
             justify-content: space-between;
         }
     }
 
     @media screen and (min-width: 1645px) {
-        .popularbrandsection {
+        .popularbrandsection__cards {
             flex-wrap: nowrap;
         }
     }
