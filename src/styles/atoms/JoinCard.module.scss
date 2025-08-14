@@ -1,0 +1,17 @@
+.joincard {
+    padding: 32px;
+    max-width: 266px;
+    background-color: #E7E8EA;
+    color: #3B4753;
+    border-radius: 3px;
+    width: 100%;
+
+    & p {
+        font-size: 14px;
+    }
+
+    & h2 {
+        font-size: 20px;
+    }
+}
+
