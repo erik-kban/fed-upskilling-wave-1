@@ -1,16 +1,27 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import SignIn from "@/components/molecules/SignIn";
-
-import Register from "@/components/molecules/Register";
+import Header from "@/components/organisms/Header/Header";
+import Carousel from "@/components/molecules/Carousel/Carousel";
 import SignInRegister from "@/components/organisms/SignInRegister";
+import ProductCategories from "@/components/molecules/ProductCategories";
 import PopularBrandSection from "@/components/molecules/PopularBrandSection/PopularBrandSection";
+import JoinSca from "@/components/molecules/JoinSCA/JoinSca";
+import Footer from "@/components/molecules/Footer/Footer";
 
 export default function Home() {
   return (
     <div>
-      <PopularBrandSection amount={10}/>
-
+      <Header />
+      <Carousel
+        images={[
+          "/CarouselAssets/1.jpg",
+          "/CarouselAssets/2.jpg",
+          "/CarouselAssets/3.jpg",
+        ]}
+      />
+      <SignInRegister />
+      <ProductCategories />
+      <PopularBrandSection amount={10} />
+      <JoinSca/>
+      <Footer/>
     </div>
   );
 }
