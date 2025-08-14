@@ -1,0 +1,16 @@
+.productCategory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  padding: 18px 20px;
+  background-color: rgba(120, 129, 137, 1);
+  margin-bottom: 12px;
+  margin-right: 16px;
+
+  & h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
