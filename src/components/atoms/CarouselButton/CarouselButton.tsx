@@ -20,7 +20,7 @@ const CarouselButton: React.FC<CarouselButtonProps> = ({ direction, onClick, cla
       tabIndex={0}
     >
       <Image 
-        src={`/carouselAssets/${direction}-arrow.svg`}
+        src={`/CarouselAssets/${direction}-arrow.svg`}
         alt="Image of arrow"  
         width={48}
         height={48}

@@ -72,7 +72,7 @@ const Carousel: React.FC<CarouselProps> = ({ images = [] }) => {
 
             <div className={styles.carousel__pagination}>
                 <Image
-                    src="/carouselAssets/pagination.svg"
+                    src="/CarouselAssets/pagination.svg"
                     alt="Pagination indicator"
                     width={100}
                     height={100}
