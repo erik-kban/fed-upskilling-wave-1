@@ -1,7 +1,7 @@
 
 'use client'
 import React from 'react'
-import logoImage from '@assets/HeaderAssets/tradeLogo.svg'
+import logoImage from '@assets/HeaderAssets/tradeLogo.png'
 import menuIcon from '@assets/HeaderAssets/menuIcon.svg'
 import Icon from '@/components/atoms/Icon/Icon'
 import styles from '@styles/Header.module.scss'

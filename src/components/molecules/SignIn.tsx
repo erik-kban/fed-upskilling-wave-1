@@ -1,15 +1,14 @@
 import React from "react";
-import SCALogo from "@/assets/icons/SCALogo";
 import CTAButton from "../atoms/CTAButton";
 import styles from "../../styles/molecules/SignIn.module.scss";
-
+import tradeLogo from '@assets/HeaderAssets/tradeLogo.png'
 import Icon from "../atoms/Icon/Icon";
 import HideIcon from "@assets/SignInRegsiterAssets/HideIcon.svg";
 
 const SignIn = () => {
   return (
     <div className={styles.signin}>
-      <SCALogo />
+      <Icon width={151} height={44} logo={tradeLogo} />
       <h1>Sign in to your Trade Account</h1>
       <div className={`${styles["signin__textinput"]}`}>
         <label htmlFor="email">Email</label>

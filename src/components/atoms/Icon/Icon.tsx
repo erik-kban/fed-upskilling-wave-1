@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react'
 
 interface IconProps {
-    logo?: string;
+    logo?: string | StaticImageData;
     width?: number;
     height?: number;
     alt?: string;
