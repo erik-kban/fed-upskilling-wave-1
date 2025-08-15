@@ -17,7 +17,7 @@ const Disclaimers = () => {
                     <li className={styles.disclaimers__item}>Site Map</li>
                 </ul>
                 <ul className={styles.disclaimers__list}>
-                    <li className={styles.disclaimers__copyright}>&#169; 2023 Supercheap Auto</li>
+                    <li className={styles.disclaimers__copyright}>&#169; 2025 Automotive Retailer</li>
                 </ul>
             </div>
         </div>

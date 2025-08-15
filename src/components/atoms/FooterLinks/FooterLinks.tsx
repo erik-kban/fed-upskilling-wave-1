@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from '@styles/atoms/FooterLinks.module.scss'
 import Icon from '../Icon/Icon'
-import tradeLogo from '@assets/HeaderAssets/tradeLogo.svg'
+import tradeLogo from '@assets/HeaderAssets/tradeLogo.png'
 import buttonUp from "@assets/buttonUp.svg"
 
 const FooterLinks = () => {
